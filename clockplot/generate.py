@@ -43,6 +43,22 @@ def genStageData(n_obs, n_stages, n_clusters, cluster_data):
         stages[i] = np.random.choice(n_stages, p = p_mat[:, ob])
     return stages, p_mat
 
+def formData(data):
+    """
+    Re-format the dataframe into an adjusted pivot table. Assumes columns are named 'cluster' and 'satge'.
+    
+    Input:
+        data (pandas dataframe): the dataframe to pivot and adjust
+    
+    Output:
+        returns a pivot table of the data that has been adjusted to give percentages
+    """
+    pivoted = data.pivot_table(columns='stage', index=['cluster'], aggfunc={'stage':'count'})
+    pivoted.reset_index(inplace=True)
+    pivoted['sum'] = pivoted.drop('cluster', axis=1).sum(axis=1)
+    pivoted2 = pivoted.loc[:, 'stage'].div(pivoted['sum'], axis=0)
+    return pivoted2
+
 def generateData(n_obs = 1000, n_stages = 5, n_clusters = 12):
     """
     Generates random data for demoing.
@@ -62,8 +78,10 @@ def generateData(n_obs = 1000, n_stages = 5, n_clusters = 12):
     cluster_data = np.random.randint(0, high = n_clusters, size = n_obs)
     # put the stage and cluster data into a dataframe, then pivot and set the sum of all rows=1
     data = pd.DataFrame({'cluster':cluster_data, 'stage':stage_data})
-    pivoted = data.pivot_table(columns='stage', index=['cluster'], aggfunc={'stage':'count'})
-    pivoted.reset_index(inplace=True)
-    pivoted['sum'] = pivoted.drop('cluster', axis=1).sum(axis=1)
-    pivoted2 = pivoted.loc[:, 'stage'].div(pivoted['sum'], axis=0)
-    return pivoted2
+    return formData(data)
+
+def _test():
+    generateData()
+
+if __name__ == "__main__":
+    _test()

@@ -61,11 +61,11 @@ def adjustColor(color, amount=0.5):
     c = colorsys.rgb_to_hls(*mc.to_rgb(c))
     return colorsys.hls_to_rgb(c[0], 1 - amount * (1 - c[1]), c[2])
 
-def main():
+def _test():
     radii = 0.501145, 0.352592, 0.146263
     angles = np.deg2rad(np.asarray([90, 225, 315]))	
     centroid = list(calcCentroid(radii, angles))
     print(centroid)
 
 if __name__ == "__main__":
-    main()
+    _test()
