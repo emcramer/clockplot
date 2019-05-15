@@ -5,3 +5,4 @@ Created on Wed May 15 16:45:40 2019
 @author: ecramer
 """
 
+name = 'clockplot'

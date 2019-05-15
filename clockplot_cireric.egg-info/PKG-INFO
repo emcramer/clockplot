@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clockplot-cireric
+Version: 0.0.1
+Summary: A package for plotting clusters in a simple "pseudo-temporal-ordering", like a clock face.
+Home-page: https://github.com/emcramer/clockplot
+Author: Eric Cramer
+Author-email: eric.cramer@curie.fr
+License: UNKNOWN
+Description: # clockplot
+        Plotting utility for a "clockplot" that puts groups into a time-ordered heterogeneity visualization
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
