@@ -19,6 +19,6 @@ That said, this way of visualizing data could be applied to other data driven fi
 
 Example with the included `lineardemo` data, which is simulated data made by "rolling" a population bolus across a series of time points. We can then order the populations based on their angle from 12 o'clock: 2, 4, 3, 8, 9, 12, 5, 7, 6, 11, 10. 
 
-![A sample clockplot using the built-in lineardemo data](img/demo.png)
+![A sample clockplot using the built-in lineardemo data](img/clockplot-explained.png)
 
 Please see `demo.ipynb` for a demonstration of the usage.
