@@ -4,11 +4,12 @@
 The clockplot is designed to help visualize how subgroups of a population are arranged over time, while maintaining a metric of for the heterogeneity or purity of that subgroup. 
 
 <div style="text-align:center;">
-    <img src="img/populations.PNG" alt="defining populations and subpopulations"/>
+    <img src="img/pop-to-plot.PNG" alt="defining populations and subpopulations"/>
     <p><em>
         We can see different subpopulations of a larger population, but how are they organized over time?
     </p></em>
 </div>
+
 
 This visualization was designed with biology in mind. For example, given a cell population defined by a particular CD marker, we might be want to define subpopulations by the different combinations of other markers expressed by those cells, and see *when* those phenotypes might appear. The clockplot lets you arrange the stages or time points like hours on a clock, and then the subpopulations are "pulled" towards each time point based on their percentage component of that timepoint (this algorithm is partially inspired by tracking how the center of mass along a frequency wave moves during a Fourier transform). 
 
