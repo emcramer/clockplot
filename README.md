@@ -1,4 +1,6 @@
 # What is a "clockplot?"
+
+
 The clockplot is designed to help visualize how subgroups of a population are arranged over time, while maintaining a metric of for the heterogeneity or purity of that subgroup. 
 
 <div style="text-align:center;">
@@ -19,4 +21,3 @@ Example with the included `lineardemo` data, which is simulated data made by "ro
 ![A sample clockplot using the built-in lineardemo data](img/demo.PNG)
 
 Please see `demo.ipynb` for a demonstration of the usage.
-
