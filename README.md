@@ -6,7 +6,7 @@ The clockplot is designed to help visualize how subgroups of a population are ar
 <div style="text-align:center;">
     <img src="img/populations.PNG" alt="defining populations and subpopulations"/>
     <p><em>
-        How are populations and subpopulations defined for a clockplot?
+        We can see different subpopulations of a larger population, but how are they organized over time?
     </p></em>
 </div>
 
