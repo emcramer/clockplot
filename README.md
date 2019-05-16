@@ -4,7 +4,7 @@
 The clockplot is designed to help visualize how subgroups of a population are arranged over time, while maintaining a metric of for the heterogeneity or purity of that subgroup. 
 
 <div style="text-align:center;">
-    <img src="img/populations.png" alt="defining populations and subpopulations"/>
+    <img src="img/populations.PNG" alt="defining populations and subpopulations"/>
     <p><em>
         How are populations and subpopulations defined for a clockplot?
     </p></em>
@@ -18,6 +18,6 @@ That said, this way of visualizing data could be applied to other data driven fi
 
 Example with the included `lineardemo` data, which is simulated data made by "rolling" a population bolus across a series of time points. We can then order the populations based on their angle from 12 o'clock: 2, 4, 3, 8, 9, 12, 5, 7, 6, 11, 10. 
 
-![A sample clockplot using the built-in lineardemo data](img/demo.PNG)
+![A sample clockplot using the built-in lineardemo data](img/demo.png)
 
 Please see `demo.ipynb` for a demonstration of the usage.
